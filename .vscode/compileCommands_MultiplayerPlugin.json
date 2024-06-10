@@ -1,0 +1,58 @@
+[
+	{
+		"file": "/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/Source/MultiplayerPlugin/MultiplayerPlugin.Build.cs",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/.vscode/compileCommands_MultiplayerPlugin/MultiplayerPlugin.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.4/Engine/Source"
+	},
+	{
+		"file": "/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/Source/MultiplayerPlugin/MultiplayerPlugin.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/.vscode/compileCommands_MultiplayerPlugin/MultiplayerPlugin.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.4/Engine/Source"
+	},
+	{
+		"file": "/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/Source/MultiplayerPlugin/MultiplayerPlugin.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/.vscode/compileCommands_MultiplayerPlugin/MultiplayerPlugin.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.4/Engine/Source"
+	},
+	{
+		"file": "/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/Source/MultiplayerPlugin/MultiplayerPluginCharacter.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/.vscode/compileCommands_MultiplayerPlugin/MultiplayerPlugin.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.4/Engine/Source"
+	},
+	{
+		"file": "/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/Source/MultiplayerPlugin/MultiplayerPluginCharacter.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/.vscode/compileCommands_MultiplayerPlugin/MultiplayerPlugin.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.4/Engine/Source"
+	},
+	{
+		"file": "/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/Source/MultiplayerPlugin/MultiplayerPluginGameMode.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/.vscode/compileCommands_MultiplayerPlugin/MultiplayerPlugin.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.4/Engine/Source"
+	},
+	{
+		"file": "/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/Source/MultiplayerPlugin/MultiplayerPluginGameMode.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/.vscode/compileCommands_MultiplayerPlugin/MultiplayerPlugin.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.4/Engine/Source"
+	}
+]

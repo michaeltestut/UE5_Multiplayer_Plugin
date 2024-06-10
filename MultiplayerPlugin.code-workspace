@@ -1,0 +1,849 @@
+{
+	"folders": [
+		{
+			"name": "MultiplayerPlugin",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/Users/Shared/Epic Games/UE_5.4"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "MultiplayerPlugin Mac Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"Mac",
+					"Debug",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"Mac",
+					"Debug",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MultiplayerPlugin Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin Mac Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"Mac",
+					"Debug",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"Mac",
+					"DebugGame",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"Mac",
+					"DebugGame",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MultiplayerPlugin Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"Mac",
+					"DebugGame",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin Mac Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"Mac",
+					"Development",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"Mac",
+					"Development",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MultiplayerPlugin Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin Mac Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"Mac",
+					"Development",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin Mac Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"Mac",
+					"Test",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin Mac Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"Mac",
+					"Test",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MultiplayerPlugin Mac Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin Mac Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"Mac",
+					"Test",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin Mac Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"Mac",
+					"Shipping",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin Mac Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"Mac",
+					"Shipping",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MultiplayerPlugin Mac Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin Mac Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"Mac",
+					"Shipping",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin IOS Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"IOS",
+					"Debug",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin IOS Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"IOS",
+					"Debug",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MultiplayerPlugin IOS Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin IOS Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"IOS",
+					"Debug",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin IOS DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"IOS",
+					"DebugGame",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin IOS DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"IOS",
+					"DebugGame",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MultiplayerPlugin IOS DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin IOS DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"IOS",
+					"DebugGame",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin IOS Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"IOS",
+					"Development",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin IOS Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"IOS",
+					"Development",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MultiplayerPlugin IOS Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin IOS Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"IOS",
+					"Development",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin IOS Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"IOS",
+					"Test",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin IOS Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"IOS",
+					"Test",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MultiplayerPlugin IOS Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin IOS Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"IOS",
+					"Test",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin IOS Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"IOS",
+					"Shipping",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin IOS Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"IOS",
+					"Shipping",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MultiplayerPlugin IOS Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPlugin IOS Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPlugin",
+					"IOS",
+					"Shipping",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPluginEditor Mac Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPluginEditor",
+					"Mac",
+					"Debug",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPluginEditor Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPluginEditor",
+					"Mac",
+					"Debug",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MultiplayerPluginEditor Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPluginEditor Mac Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPluginEditor",
+					"Mac",
+					"Debug",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPluginEditor Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPluginEditor",
+					"Mac",
+					"DebugGame",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPluginEditor Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPluginEditor",
+					"Mac",
+					"DebugGame",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MultiplayerPluginEditor Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPluginEditor Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPluginEditor",
+					"Mac",
+					"DebugGame",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPluginEditor Mac Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPluginEditor",
+					"Mac",
+					"Development",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPluginEditor Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPluginEditor",
+					"Mac",
+					"Development",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"MultiplayerPluginEditor Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "MultiplayerPluginEditor Mac Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"MultiplayerPluginEditor",
+					"Mac",
+					"Development",
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch MultiplayerPlugin (Debug)",
+				"request": "launch",
+				"program": "/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/Binaries/Mac/UnrealGame-Mac-Debug.app/Contents/MacOS/UnrealGame-Mac-Debug",
+				"preLaunchTask": "MultiplayerPlugin Mac Debug Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.4",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch MultiplayerPlugin (DebugGame)",
+				"request": "launch",
+				"program": "/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/Binaries/Mac/UnrealGame-Mac-DebugGame.app/Contents/MacOS/UnrealGame-Mac-DebugGame",
+				"preLaunchTask": "MultiplayerPlugin Mac DebugGame Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.4",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch MultiplayerPlugin (Development)",
+				"request": "launch",
+				"program": "/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/Binaries/Mac/UnrealGame.app/Contents/MacOS/UnrealGame",
+				"preLaunchTask": "MultiplayerPlugin Mac Development Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.4",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch MultiplayerPlugin (Test)",
+				"request": "launch",
+				"program": "/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/Binaries/Mac/UnrealGame-Mac-Test.app/Contents/MacOS/UnrealGame-Mac-Test",
+				"preLaunchTask": "MultiplayerPlugin Mac Test Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.4",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch MultiplayerPlugin (Shipping)",
+				"request": "launch",
+				"program": "/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/Binaries/Mac/UnrealGame-Mac-Shipping.app/Contents/MacOS/UnrealGame-Mac-Shipping",
+				"preLaunchTask": "MultiplayerPlugin Mac Shipping Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.4",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch MultiplayerPluginEditor (Debug)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.4/Engine/Binaries/Mac/UnrealEditor-Mac-Debug.app/Contents/MacOS/UnrealEditor-Mac-Debug",
+				"preLaunchTask": "MultiplayerPluginEditor Mac Debug Build",
+				"args": [
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.4",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch MultiplayerPluginEditor (DebugGame)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.4/Engine/Binaries/Mac/UnrealEditor-Mac-DebugGame.app/Contents/MacOS/UnrealEditor-Mac-DebugGame",
+				"preLaunchTask": "MultiplayerPluginEditor Mac DebugGame Build",
+				"args": [
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.4",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch MultiplayerPluginEditor (Development)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.4/Engine/Binaries/Mac/UnrealEditor.app/Contents/MacOS/UnrealEditor",
+				"preLaunchTask": "MultiplayerPluginEditor Mac Development Build",
+				"args": [
+					"/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.4",
+				"type": "lldb"
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Mac Development Build",
+				"program": "/Users/Shared/Epic Games/UE_5.4/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/Users/michaeltestut/Documents/Unreal Projects/MultiplayerPlugin/MultiplayerPlugin.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/Users/Shared/Epic Games/UE_5.4"
+			}
+		]
+	}
+}
